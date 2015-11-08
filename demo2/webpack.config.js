@@ -6,6 +6,7 @@
 module.exports = {
 	entry: './index.jsx',
 	output: {
+		path: './dist',
 		filename: 'bundle.js', // 默认为 bundle.js
 		publicPath: 'http://localhost:8090/assets'
 	},
@@ -15,8 +16,8 @@ module.exports = {
 				// tell webpack to use jsx-loader for all *.jsx files
 				test: /\.jsx$/,
 				exclude: /node_modules/,
-				// loader: 'babel-loader'
-				loader: 'jsx-loader?insertPragma=React.DOM&harmony'
+				loader: 'babel-loader'
+				// loader: 'jsx-loader?insertPragma=React.DOM&harmony'
 			}
 		]
 	},
