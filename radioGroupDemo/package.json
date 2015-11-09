@@ -3,11 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "npm run serve | npm run autoreload",
+    "serve": "./node_modules/.bin/http-server -op 8080",
+    "autoreload": "./node_modules/.bin/autoreload-server -w 8080"
+  },
   "author": "",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "http-server": "^0.8.5"
+    "http-server": "^0.8.5",
+    "watch": "^0.16.0"
   }
 }
