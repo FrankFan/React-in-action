@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "webpack-dev-server --progress --colors --port 8090"
+    "start": "npm run serve | npm run dev",
+    "serve": "./node_modules/.bin/http-server -p 8080",
+    "dev": "webpack | webpack-dev-server --progress --colors --port 8090"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.1.2",
     "babel-loader": "^6.0.1",
+    "http-server": "^0.8.5",
     "jsx-loader": "^0.13.2",
     "react": "^0.14.2",
     "react-dom": "^0.14.2",
