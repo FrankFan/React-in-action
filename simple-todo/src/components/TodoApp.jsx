@@ -1,7 +1,7 @@
 'use strict';
 
 var React = require('react');
-var TodoList = require('./components/TodoList.jsx');
+var TodoList = require('./TodoList.jsx');
 
 var TodoApp = React.createClass({
 	getInitialState: function() {
@@ -33,7 +33,7 @@ var TodoApp = React.createClass({
 			<div>
 				<h3>TODO</h3>
 				<form onSubmit={this.handleSubmit}>
-					<input onChange={this.onChange} type="text" value={this.state.text} />
+					<input onChange={this.onChange} type='text' value={this.state.text} />
 					<button>{'Add #' + (this.state.items.length +  1) }</button>
 				</form>
 				<TodoList items={this.state.items}></TodoList>
