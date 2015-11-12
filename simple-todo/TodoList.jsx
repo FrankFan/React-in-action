@@ -2,10 +2,11 @@
 
 var React = require('react');
 
+
 var TodoList = React.createClass({
 	render: function() {
-		var createItem = function(itemText) {
-			return (<li>{itemText}</li>);
+		var createItem = function(itemText, index) {
+			return (<li key={index}>{itemText}</li>);
 		};
 		return (
 			<ul>{this.props.items.map(createItem)}</ul>

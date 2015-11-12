@@ -1,7 +1,7 @@
 'use strict';
 
 var React = require('react');
-var TodoList = require('./components/TodoList.jsx');
+var TodoList = require('./TodoList.jsx');
 
 var TodoApp = React.createClass({
 	getInitialState: function() {
@@ -42,5 +42,6 @@ var TodoApp = React.createClass({
 		);
 	}
 });
+
 
 module.exports = TodoApp;
