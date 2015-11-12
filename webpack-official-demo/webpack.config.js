@@ -1,6 +1,7 @@
 // 使用CLI
 // webpack ./entry.js bundle.js --module-bind 'css=style!css'
 // webpack --progress --colors --watch
+// webpack --display-error-details  查看报错详情
 
 // $ npm run build
 // visit: http://localhost:8080/webpack-dev-server/bundle
