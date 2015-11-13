@@ -34,7 +34,7 @@ var TodoApp = React.createClass({
 				<h3>TODO</h3>
 				<form onSubmit={this.handleSubmit}>
 					<input onChange={this.onChange} type='text' value={this.state.text} />
-					<button>{'Add #' + (this.state.items.length +  1) }</button>
+					<button>{'Add xx #' + (this.state.items.length +  1) }</button>
 				</form>
 				<TodoList items={this.state.items}></TodoList>
 				
