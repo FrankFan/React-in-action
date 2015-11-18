@@ -1,10 +1,10 @@
 var path = require('path');
 var webpack = require('webpack');
-var React = require('react');
+// var React = require('react');
 
 
 module.exports = {
-    devtool: 'eval',
+    // devtool: 'eval',
     entry: [
         // 'webpack-dev-server/client?http://localhost:3000', 
         // 'webpack/hot/only-dev-server', 
@@ -12,30 +12,33 @@ module.exports = {
     ],
     output: {
         path: __dirname + '/dist',
-        filename: 'bundle.js',
-        publicPath: '/static/'
+        filename: 'bundle.js'
     },
-    plugins: [
-        new webpack.HotModuleReplacementPlugin()
-    ],
+    // plugins: [
+    //     new webpack.HotModuleReplacementPlugin()
+    // ],
     module: {
         loaders: [
             {
-                test: /\.jsx?$/,
+                test: /.jsx?$/,
                 exclude: /node_modules/,
-                loader: ['babel'],
-                inclue: path.join(__dirname, 'src'),
+                loader: ['babel-loader'],
+                // inclue: path.join(__dirname, 'src'),
                 query: {
                   presets: ['es2015', 'react']
                 }
+            },
+            {
+                test: /\.css$/,
+                loader: 'style!css'
             }
         ]
     },
-    externals: {
+    // externals: {
         //don't bundle the 'react' npm package with our bundle.js
         //but get it from a global 'React' variable
-        'react': 'React'
-    }
+        // 'react': 'React'
+    // }
     // resolve: {
     //     extensions: ['', '.js', '.jsx']
     // }
