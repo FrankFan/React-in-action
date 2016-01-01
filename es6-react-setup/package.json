@@ -1,0 +1,17 @@
+{
+  "name": "es6-react-setup",
+  "version": "1.0.0",
+  "description": "## install ``` $ npm init -y",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "keywords": [],
+  "repository": "https://github.com/FrankFan/React-in-action",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^0.14.5",
+    "react-dom": "^0.14.5"
+  }
+}
