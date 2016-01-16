@@ -26,4 +26,7 @@ App.defaultProps = {
 
 ```
 
-see 7
+### life cycle
+
+
+see 11
