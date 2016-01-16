@@ -9,33 +9,42 @@ class LifeCycle extends React.Component {
 	}
 
 	update() {
+		console.log(this.state.val);
 		this.setState({ val: this.state.val + 1});
 	}
 
 	componentWillMount() {
 		console.log('mounting');
+		this.setState({m: 2});
 	}
 
 	render() {
 		console.log('rendering!');
 		return (
 			<div>
-				<button onClick={this.update}>{this.state.val}</button>
+				<button onClick={this.update}>
+					{this.state.val * this.state.m}
+				</button>
 			</div>
 		)
 	}
 
 	componentDidMount() {
 		console.log('mounted');
+		// console.log(ReactDOM.findDOMNode(this));
+		this.inc = setInterval(this.update, 500);
+	}
+
+	componentWillUnmount() {
+		console.log('bye!');
+		clearInterval(this.inc);
 	}
 
 	componentWillUpdate(nextProps, nextState) {
 		
 	}
 
-	componentWillUnmount() {
-		console.log('bye!');
-	}
+	
 }
 
 export default LifeCycle
