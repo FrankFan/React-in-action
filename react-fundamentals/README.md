@@ -28,4 +28,27 @@ App.defaultProps = {
 
 ### life cycle
 
+```js
+constructor
+componentWillMount
+render
+componentDidMount
+componentWillUnmount
+componentWillUpdate
+```
+
+### react tech-stack
+```js
+React
+  State
+  Props
+  Component LifeCycle
+  JSX
+  propTypes
+  Events
+Webpack
+Routing
+  React-Router
+```
+
 
