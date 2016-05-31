@@ -1,0 +1,26 @@
+{
+  "name": "react-in-action",
+  "version": "1.0.0",
+  "description": "React in action",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrankFan/React-in-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrankFan/React-in-action/issues"
+  },
+  "homepage": "https://github.com/FrankFan/React-in-action#readme",
+  "devDependencies": {
+    "eslint": "^2.11.0",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-react": "^5.1.1",
+    "pre-commit": "^1.1.3"
+  }
+}
